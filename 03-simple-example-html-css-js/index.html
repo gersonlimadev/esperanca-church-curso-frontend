@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        border: 10px solid red;
+      }
+
+      .second-content {
+        background: yellow;
+      }
+
+      .nav {
+        display: none;
+      }
+
+      .show {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <h1>Exemplo</h1>
+      <button class="btn">abrir menu</button>
+
+      <nav class="nav">
+        <ul>
+          <li>
+            <a href="#header">Página inicial</a>
+          </li>
+          <li>
+            <a href="#content">Conteúdo</a>
+          </li>
+          <li>
+            <a href="#second-content">Segundo Conteúdo</a>
+          </li>
+          <li>
+            <a href="#footer">Footer</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="box content">
+        <h2>Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae
+          impedit nemo nisi explicabo, provident labore, tenetur officia
+          consectetur temporibus, non asperiores vitae qui magnam dolores?
+          Accusamus molestiae enim sapiente corrupti qui exercitationem, iure
+          facilis rem at pariatur fuga, consectetur assumenda earum. Consequatur
+          perspiciatis, nemo quod possimus voluptatum ex magni. Exercitationem
+          nostrum amet repudiandae accusantium earum sint, pariatur distinctio
+          optio. Obcaecati repudiandae accusantium laboriosam architecto facere
+          cumque, adipisci labore quam aperiam non aliquid nihil consequuntur
+          modi saepe asperiores voluptatibus totam inventore in earum,
+          voluptatem nobis repellat corrupti.
+        </p>
+      </div>
+      <div class="box second-content">
+        <h2>Second Content</h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste, sit?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
+          voluptatibus dolores reprehenderit hic quisquam sit tempore est nihil
+          beatae unde!
+        </p>
+        <p>Lorem ipsum dolor sit amet.</p>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem reiciendis
+        voluptatum, repudiandae dignissimos itaque quia autem commodi. Minus
+        libero, sit, nobis voluptas atque quis optio mollitia ut soluta officiis
+        adipisci nulla doloremque pariatur sed, harum saepe cum voluptates?
+        Quasi, nostrum nulla consequuntur dolorem quidem quod officia maiores
+        rerum cupiditate repellat.
+      </p>
+    </footer>
+
+    <script type="text/javascript">
+      document.querySelector('.btn').addEventListener('click', function () {
+        document.querySelector('.nav').classList.toggle('show');
+      });
+    </script>
+  </body>
+</html>
