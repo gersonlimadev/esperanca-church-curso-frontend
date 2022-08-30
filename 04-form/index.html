@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- eu sou um formulario de busca -->
+    <!-- <form method="post" action="">
+      <label>Faça sua busca aqui:</label>
+      <input type="text" name="nova_busca" />
+    </form> -->
+
+    <!-- eu sou um formulario de contacto -->
+    <!-- <form method="post" action="index.html">
+      <input type="hidden" name="idioma" value="en" />
+      <label>Nome</label><br/>
+      <input type="text" name="nome" placeholder="Digite aqui o seu nome"  />
+
+      <br /><br />
+
+      <label>Email</label><br/>
+      <input type="text" name="email" placeholder="Digite aqui o seu email" />
+
+      <br/><br/>
+
+      <label>Mensagem</label><br/>
+      <textarea name="mensagem" placeholder="Digite aqui sua mensagem"></textarea>
+
+      <br/><br/>
+
+      <input type="submit" value="Enviar" />
+    </form> -->
+
+    <form method="get" action="https://www.google.com/search">
+      <input
+        type="text"
+        name="busca"
+        placeholder="Eu sou um campo de texto"
+        required
+      />
+      <br />
+
+      <p>Onde você mora?</p>
+      <label>
+        <input type="radio" name="local" value="Cascais" />
+        Cascais
+      </label>
+      <br />
+      <label>
+        <input type="radio" name="local" value="Oeiras" />
+        Oeiras
+      </label>
+
+      <br />
+      <br />
+
+      <label>
+        Selecione o seu país
+        <select name="pais" required>
+          <option value="">Selecione...</option>
+          <option value="Brasil">Brasil</option>
+          <option value="Espanha">Espanha</option>
+          <option value="Portugal">Portugal</option>
+        </select>
+      </label>
+
+      <br />
+      <br />
+
+      <label>
+        <input type="checkbox" name="receber_novidades" />
+        Gostaria de receber nossas novidades?
+      </label>
+      <br />
+
+      <input type="reset" value="Limpar" />
+      <button type="submit">Enviar formulário</button>
+    </form>
+  </body>
+</html>
