@@ -1,31 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header container">
+      <img
+        src="logo.svg"
+        alt="Logo"
+        width="120"
+        height="25"
+        class="header-logo"
+      />
 
-  <header class="header">
-    <img src="logo.svg" alt="Logo" width="120" height="25" class="header-logo">
+      <button type="button" class="header-button">
+        <img src="toggle.svg" alt="Toggle Menu" width="15" height="15" />
+        Menu
+      </button>
 
-    <button type="button" class="header-button">
-      <img src="toggle.svg" alt="Toggle Menu" width="15" height="15">
-      Menu
-    </button>
+      <nav class="header-nav">
+        <ul>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Lojas</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav class="header-nav">
-      <ul>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Produtos</a></li>
-        <li><a href="#">Lojas</a></li>
-        <li><a href="#">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
+    <footer class="rodape">
+      <div class="rodape-container container">
+        <ul class="rodape-links">
+          <li><a href="#">Página inicial</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Produtos</a></li>
+          <li><a href="#">Lojas</a></li>
+          <li><a href="#">Notícias</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
 
-</body>
+        <div class="rodape-box">
+          <div class="rodape-copyright">
+            <img
+              src="logo-branco.svg"
+              alt="Logo"
+              width="140"
+              height="29"
+              class="rodape-logo"
+            />
+            <p>© 2020 Company Name. All rights reserved.</p>
+          </div>
+
+          <div class="rodape-privacy">
+            <p>
+              <a href="">Privacy Policy</a>
+              /
+              <a href="">Cookie Policy</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>
