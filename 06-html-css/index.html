@@ -6,30 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="rodape.css" />
+    <link rel="stylesheet" href="banner.css" />
+    <link rel="stylesheet" href="news.css" />
   </head>
   <body>
-    <header class="header container">
-      <img
-        src="logo.svg"
-        alt="Logo"
-        width="120"
-        height="25"
-        class="header-logo"
-      />
+    <header id="header" class="header">
+      <div class="container">
+        <img
+          src="logo.svg"
+          alt="Logo"
+          width="120"
+          height="25"
+          class="header-logo"
+        />
 
-      <button type="button" class="header-button">
-        <img src="toggle.svg" alt="Toggle Menu" width="15" height="15" />
-        Menu
-      </button>
+        <button type="button" class="header-button">
+          <img src="toggle.svg" alt="Toggle Menu" width="15" height="15" />
+          Menu
+        </button>
 
-      <nav class="header-nav">
-        <ul>
-          <li><a href="#">Sobre</a></li>
-          <li><a href="#">Produtos</a></li>
-          <li><a href="#">Lojas</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </nav>
+        <nav class="header-nav">
+          <ul>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Lojas</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <article class="banner container">
@@ -46,6 +52,65 @@
         <a href="#" class="banner-button">Saiba mais</a>
       </div>
     </article>
+
+    <section class="news container">
+      <header class="news-header">
+        <h3>Últimas notícias</h3>
+      </header>
+
+      <div class="news-posts">
+        <article class="news-post">
+          <h4>1 - Phasellus interdum quam a scelerisque fermentum</h4>
+          <p>
+            by <strong>John Smith</strong> on <strong>January 24, 2020</strong>
+          </p>
+          <a href="#">Listen Now</a>
+        </article>
+        <article class="news-post">
+          <h4>2 - Phasellus interdum quam a scelerisque fermentum</h4>
+          <p>
+            by <strong>John Smith</strong> on <strong>January 24, 2020</strong>
+          </p>
+          <a href="#">Listen Now</a>
+        </article>
+        <article class="news-post">
+          <h4>3 - Phasellus interdum quam a scelerisque fermentum</h4>
+          <p>
+            by <strong>John Smith</strong> on <strong>January 24, 2020</strong>
+          </p>
+          <a href="#">Listen Now</a>
+        </article>
+        <article class="news-post">
+          <h4>4 - Phasellus interdum quam a scelerisque fermentum</h4>
+          <p>
+            by <strong>John Smith</strong> on <strong>January 24, 2020</strong>
+          </p>
+          <a href="#">Listen Now</a>
+        </article>
+        <article class="news-post">
+          <h4>5 - Phasellus interdum quam a scelerisque fermentum</h4>
+          <p>
+            by <strong>John Smith</strong> on <strong>January 24, 2020</strong>
+          </p>
+          <a href="#">Listen Now</a>
+        </article>
+        <article class="news-post">
+          <h4>6 - Phasellus interdum quam a scelerisque fermentum</h4>
+          <p>
+            by <strong>John Smith</strong> on <strong>January 24, 2020</strong>
+          </p>
+          <a href="#">Listen Now</a>
+        </article>
+      </div>
+
+      <div class="news-pagination">
+        <a href="#">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+      </div>
+    </section>
 
     <footer class="rodape">
       <div class="rodape-container container">

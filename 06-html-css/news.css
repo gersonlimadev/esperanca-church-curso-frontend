@@ -1,0 +1,99 @@
+.news {
+  padding: 0 24px;
+  margin-bottom: 40px;
+}
+
+.news-header {
+  margin-bottom: 24px;
+}
+
+.news-header h3 {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 18px;
+  color: #757575;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.news-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 0 4px;
+}
+
+.news-pagination a {
+  display: block;
+  color: #212121;
+  border: 1px solid #212121;
+  width: 44px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 3px;
+  transition: all 150ms ease;
+}
+
+.news-posts {
+  display: grid;
+  margin-bottom: 40px;
+  gap: 24px 0;
+}
+
+.news-post {
+  background-color: #fff;
+  padding: 24px;
+  transition: all 2s ease;
+}
+
+.news-post h4 {
+  margin-bottom: 12px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  color: #212121;
+  transition: all 150ms ease;
+}
+
+.news-post p {
+  margin-bottom: 20px;
+  color: #bdbdbd;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.news-post p strong {
+  font-weight: 400;
+  color: #212121;
+}
+
+.news-post a {
+  display: inline-block;
+  padding: 10px 14px;
+  text-align: center;
+  border-radius: 3px;
+  text-decoration: none;
+  color: #212121;
+  font-weight: 600;
+  font-size: 13px;
+  background-color: #f5f5f5;
+}
+
+@media screen and (min-width: 768px) {
+  .news-posts {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .news {
+    margin-bottom: 60px;
+  }
+
+  .news-pagination a:hover {
+    background-color: #212121;
+    color: #fff;
+  }
+}
