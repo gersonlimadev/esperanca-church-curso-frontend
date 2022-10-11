@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>07 - HTML</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background: #000;
+        color: #fff;
+      }
+      main {
+        display: flex;
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+      }
+      img {
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+        height: 500px;
+        border: 1px solid red;
+      }
+      div p:before {
+        content: '';
+        display: block;
+        background: url('./images/phone.svg') no-repeat;
+        width: 24px;
+        height: 24px;
+      }
+      section {
+        position: relative;
+        width: 50%;
+        height: 500px;
+        border: 1px solid blue;
+      }
+      section img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+      }
+      section:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 1px;
+        background: #fff;
+        opacity: 0.1;
+      }
+      section:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 1px;
+        height: 100%;
+        background: #fff;
+        opacity: 0.1;
+      }
+      article {
+        position: relative;
+        width: 500px;
+        height: 100px;
+        display: flex;
+      }
+      article span {
+        display: block;
+        width: 100px;
+        height: 100px;
+      }
+      article span:nth-child(1) {
+        border-top: 1px solid #fff;
+        border-right: 1px solid #fff;
+      }
+      article span:nth-child(2) {
+        width: 300px;
+        border-bottom: 1px solid #fff;
+      }
+      article span:nth-child(3) {
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+      }
+      article p {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        background: red;
+        text-align: center;
+        transform: translate(-50%, -50%);
+      }
+      article strong {
+        display: block;
+        font-size: 48px;
+      }
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 0;
+        transition: all 300ms ease;
+      }
+      button.anterior {
+        background: #fff;
+      }
+      button.anterior svg {
+        transform: rotate(-180deg)
+      }
+      button.proximo {
+        background: #37806b;
+        color: #fff;
+      }
+      button.proximo:hover,
+      button.anterior:hover {
+        color: red;
+      }
+      button:active {
+        transform: scale(0.1);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem
+          aliquid assumenda expedita laudantium ullam harum maiores repudiandae
+          nobis sapiente provident?
+        </p>
+      </div>
+      <section>
+        <img src="images/phone.svg" alt="" />
+      </section>
+    </main>
+
+    <article>
+      <button class="anterior">
+        <svg
+          width="7"
+          height="11"
+          viewBox="0 0 7 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1 1L5 5.5L1 10" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+      <button class="proximo">
+        <svg
+          width="7"
+          height="11"
+          viewBox="0 0 7 11"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path d="M1 1L5 5.5L1 10" stroke="currentColor" stroke-width="2" />
+        </svg>
+      </button>
+    </article>
+  </body>
+</html>
